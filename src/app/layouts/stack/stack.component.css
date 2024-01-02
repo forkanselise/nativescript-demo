@@ -1,0 +1,24 @@
+Label {
+    height: 50;
+}
+StackLayout {
+    /* background-color: blue; */
+    border-color: brown;
+    border-width: 5;
+    padding: 10;
+    height: 300;
+    width: 100%;
+}
+
+.label1 {
+    background-color: aqua;
+}
+.label2 {
+    background-color: rgb(82, 232, 147);
+}
+.label3 {
+    background-color: rgb(251, 112, 221);
+}
+.label4 {
+    background-color: rgb(144, 101, 251);
+}
