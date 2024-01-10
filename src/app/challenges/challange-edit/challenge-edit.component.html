@@ -1,0 +1,32 @@
+
+<FlexboxLayout flexDirection="column">
+
+    <FlexboxLayout justifyContent="space-between">
+        <TextField width="50%" class="form-control" hint="Title" [(ngModel)]="challengeDescription"></TextField>
+        <Button width="50%" class="btn" (tap)="onSetChallenge()" text="Add Challenge"></Button>
+    </FlexboxLayout>
+
+    <!-- <ListView [items]="currentChallenges" (itemTap)="onItemTap()"> -->
+
+        <!-- <ListView.itemTemplate>
+            <StackLayout>
+                <Label width="100%" textAlignment="center" class="title" text="currentChallenge"></Label>
+            </StackLayout>
+        </ListView.itemTemplate> -->
+
+        <!-- <ng-template let-challenge = "item" let-i="index">
+            <StackLayout>
+                <Label width="100%" textAlignment="center" class="title" [text]="challenge"></Label>
+            </StackLayout>
+        </ng-template> -->
+
+
+    <!-- </ListView> -->
+
+    <!-- <router-outlet></router-outlet> -->
+
+    <ns-current-challenge [challengeTitle]="currentChallenges"></ns-current-challenge>
+
+
+
+</FlexboxLayout>

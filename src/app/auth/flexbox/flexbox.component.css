@@ -1,0 +1,48 @@
+Label {
+    /* height: 50;
+    width: 50; */
+}
+.main-container {
+    /* border-color: rgb(241, 6, 6); */
+    border-width: 5;
+}
+
+.top-area {
+    height: 100;
+    background-color: blueviolet;
+    border-color: black;
+    border-width: 1;
+    margin-bottom: 12;
+}
+.body-left {
+    padding: 12;
+    width: 25%;
+    height: 200;
+    border-color: black;
+    border-width: 1;
+    background-color: blueviolet;
+}
+
+.body-right {
+    margin-left: 12;
+    width: 75%;
+    height: 200;
+    border-color: black;
+    border-width: 1;
+    background-color: blueviolet;
+}
+
+.label1 {
+    background-color: aqua;
+}
+.label2 {
+    background-color: rgb(82, 232, 147);
+    border-color: black;
+    border-width: 1;
+}
+.label3 {
+    background-color: rgb(251, 112, 221);
+}
+.label4 {
+    background-color: rgb(144, 101, 251);
+}
