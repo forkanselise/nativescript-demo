@@ -3,10 +3,10 @@ Label {
 }
 StackLayout {
     /* background-color: blue; */
-    border-color: brown;
+    /* border-color: brown;
     border-width: 5;
     padding: 10;
-    height: 300;
+    height: 300; */
     width: 100%;
 }
 

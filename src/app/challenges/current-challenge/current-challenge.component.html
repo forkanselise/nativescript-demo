@@ -7,6 +7,47 @@
     >
     </NavigationButton>
 </ActionBar>
-<StackLayout>
-    <Label *ngFor="let item of challengeTitle" width="100%" textAlignment="center" class="title" [text]="item"></Label>
+
+<!-- Important: With version 6 of NativeScript the TabView component is deprecated. Consider using BottomNavigation or Tabs components instead as these components are providing much greater control and functionalities. -->
+<StackLayout verticalAlignment="top" height="100%">
+    <!-- <Label>rsdfgfhjkl</Label>
+    <TabView>
+        <TabViewItem title="TAB 1">
+            <StackLayout>
+                <Label>sdfghjkl;</Label>
+                <Label *ngFor="let item of challengeTitle" width="100%" textAlignment="center" class="title" [text]="item"></Label>
+            </StackLayout>
+        </TabViewItem>
+
+        <TabViewItem title="TAB 2">
+            <StackLayout>
+                <Label>sdfghjkl;</Label>
+                <Label *ngFor="let item of challengeTitle" width="100%" textAlignment="center" class="title" [text]="item"></Label>
+            </StackLayout>
+        </TabViewItem>
+
+
+    </TabView> -->
+
+    <!-- <WebView #myWebView src="https://facebook.com"></WebView> -->
+
+    <!-- Important: With version 6 of NativeScript the TabView component is deprecated. Consider using BottomNavigation or Tabs components instead as these components are providing much greater control and functionalities. -->
+
+    <TabView>
+        <StackLayout *tabItem="{title: 'Today'}">
+          <Label text="Tab 1"></Label>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Current Challenge'}">
+            <!-- <Label text="Tab 2"></Label> -->
+            <WebView #myWebView src="https://google.com"></WebView>
+          </StackLayout>
+    </TabView>
+
+    <!-- Important: With version 6 of NativeScript the TabView component is deprecated. Consider using BottomNavigation or Tabs components instead as these components are providing much greater control and functionalities. -->
+
+
+
 </StackLayout>
+<!-- <StackLayout>
+    <Label *ngFor="let item of challengeTitle" width="100%" textAlignment="center" class="title" [text]="item"></Label>
+</StackLayout> -->

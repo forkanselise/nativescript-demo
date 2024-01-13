@@ -1,7 +1,8 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import {
+  NativeScriptCommonModule,
   NativeScriptFormsModule,
-  NativeScriptModule,
+  NativeScriptModule
 } from "@nativescript/angular";
 
 import { AppRoutingModule } from "./app-routing.module";
@@ -14,12 +15,19 @@ import { GridComponent } from "./layouts/grid/grid.component";
 import { AbsoluteComponent } from "./layouts/absolute/absolute.component";
 import { CurrentChallengeComponent } from "./challenges/current-challenge/current-challenge.component";
 import { ChallengeEditComponent } from "./challenges/challange-edit/challenge-edit.component";
-import { AuthComponent } from './auth/app-auth/auth.component';
-import { TodayComponent } from './today/today.component';
+import { AuthComponent } from "./auth/app-auth/auth.component";
+import { TodayComponent } from "./today/today.component";
+import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angular';
 
 @NgModule({
   bootstrap: [AppComponent],
-  imports: [NativeScriptModule, AppRoutingModule, NativeScriptFormsModule],
+  imports: [
+    NativeScriptModule,
+    AppRoutingModule,
+    NativeScriptFormsModule,
+    NativeScriptCommonModule,
+    NativeScriptUISideDrawerModule
+  ],
   declarations: [
     AppComponent,
     ItemsComponent,
@@ -31,7 +39,7 @@ import { TodayComponent } from './today/today.component';
     CurrentChallengeComponent,
     ChallengeEditComponent,
     AuthComponent,
-    TodayComponent
+    TodayComponent,
   ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
